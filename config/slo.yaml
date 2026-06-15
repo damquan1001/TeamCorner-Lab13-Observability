@@ -4,7 +4,7 @@ slis:
   latency_p95_ms:
     objective: 3000
     target: 99.5
-    note: Replace with your group's target
+    note: Individual lab target for interactive chat latency
   error_rate_pct:
     objective: 2
     target: 99.0

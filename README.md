@@ -1,6 +1,6 @@
 # Day 13 Observability Lab Template
 
-Template repo for a 4-hour hands-on lab on Monitoring, Logging, and Observability.
+Individual repo for a 4-hour hands-on lab on Monitoring, Logging, and Observability.
 
 ## What students will build
 
@@ -12,7 +12,7 @@ A small FastAPI "agent" instrumented with:
 - minimal metrics aggregation
 - SLOs, alerts, and a blueprint report
 
-This template is intentionally incomplete. Teams are expected to finish TODOs during the lab.
+This template started as a gapped lab. The individual task is to complete the instrumentation, collect evidence, and submit one coherent report.
 
 ## Suggested lab flow (Gapped Template)
 
@@ -24,6 +24,25 @@ This template is intentionally incomplete. Teams are expected to finish TODOs du
 6. **Tracing**: Send 10-20 requests and verify traces in Langfuse (ensure `observe` decorator is used).
 7. **Dashboards**: Build your 6-panel dashboard from exported metrics.
 8. **Alerting**: Configure alert rules in `config/alert_rules.yaml` and test them.
+
+## Individual completion checklist
+
+```bash
+# Run automated tests
+.\.venv\Scripts\python.exe -m pytest -q
+
+# Start the app
+uvicorn app.main:app --reload
+
+# In another terminal, generate at least 10 requests
+python scripts/load_test.py --concurrency 5
+
+# Check JSON logs, correlation IDs, enrichment, and PII scrubbing
+python scripts/validate_logs.py
+
+# Open the 6-panel metrics dashboard
+# http://127.0.0.1:8000/dashboard
+```
 
 ## Quick start
 
@@ -79,35 +98,31 @@ data/
   audit.jsonl            optional audit log output
 
 docs/
-  blueprint-template.md  team submission template
+  blueprint-template.md  individual submission template
   alerts.md              runbook + alert worksheet
   dashboard-spec.md      6-panel dashboard checklist
   grading-evidence.md    evidence collection sheet
   mock-debug-qa.md       oral/written debugging questions
 ```
 
-## Team role suggestion
+## Individual work areas
 
-- Member A: logging + PII
-- Member B: tracing + tags
-- Member C: SLO + alerts
-- Member D: load test + incident injection
-- Member E: dashboard + evidence
-- Member F: blueprint + demo lead
+- Logging, correlation IDs, and PII scrubbing
+- Tracing tags and request metadata
+- SLOs, alert rules, and runbooks
+- Load testing, incident injection, dashboard evidence
+- Blueprint report and demo evidence
 
-## Grading policy (60/40 Split)
+## Grading policy
 
 Your final grade is calculated as follows:
 
-1. **Group Score (60%)**: 
-   - **Technical Implementation (30 pts)**: Verified by `validate_logs.py` and live system state.
-   - **Incident Response (10 pts)**: Accuracy of your root cause analysis in the report.
-   - **Live Demo (20 pts)**: Team presentation and system demonstration.
-2. **Individual Score (40%)**:
-   - **Individual Report (20 pts)**: Quality of your specific contributions in `docs/blueprint-template.md`.
-   - **Git Evidence (20 pts)**: Traceable work via commits and code ownership.
+1. **Technical Implementation**: Verified by `validate_logs.py` and live system state.
+2. **Incident Response**: Accuracy of your root cause analysis in the report.
+3. **Live Demo / Evidence**: System demonstration, dashboard screenshots, and trace evidence.
+4. **Individual Report & Git Evidence**: Quality of `docs/blueprint-template.md` and traceable commits.
 
 **Passing Criteria**: 
-- All `TODO` blocks must be completed.
+- All implementation gaps must be completed.
 - Minimum of 10 traces must be visible in Langfuse.
 - Dashboard must show all 6 required panels.

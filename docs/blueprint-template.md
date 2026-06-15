@@ -1,27 +1,23 @@
-# Day 13 Observability Lab Report
+# Day 13 Observability Lab Individual Report
 
 > **Instruction**: Fill in all sections below. This report is designed to be parsed by an automated grading assistant. Ensure all tags (e.g., `[GROUP_NAME]`) are preserved.
 
-## 1. Team Metadata
-- [GROUP_NAME]: 
-- [REPO_URL]: 
-- [MEMBERS]:
-  - Member A: [Name] | Role: Logging & PII
-  - Member B: [Name] | Role: Tracing & Enrichment
-  - Member C: [Name] | Role: SLO & Alerts
-  - Member D: [Name] | Role: Load Test & Dashboard
-  - Member E: [Name] | Role: Demo & Report
+## 1. Individual Metadata
+- [GROUP_NAME]: LE DAM QUAN - 2A202600930
+- [REPO_URL]: https://github.com/damquan1001/TeamCorner-Lab13-Observability/tree/ledamquan
+- [SUBMISSION_BRANCH]:/ledamquan
+- [PRIMARY_ROLE]: Logging, tracing, metrics, SLOs, alerts, dashboard evidence, and report.
 
 ---
 
-## 2. Group Performance (Auto-Verified)
+## 2. Individual Performance (Auto-Verified)
 - [VALIDATE_LOGS_FINAL_SCORE]: /100
-- [TOTAL_TRACES_COUNT]: 
-- [PII_LEAKS_FOUND]: 
+- [TOTAL_TRACES_COUNT]:
+- [PII_LEAKS_FOUND]:
 
 ---
 
-## 3. Technical Evidence (Group)
+## 3. Technical Evidence
 
 ### 3.1 Logging & Tracing
 - [EVIDENCE_CORRELATION_ID_SCREENSHOT]: [Path to image]
@@ -37,43 +33,28 @@
 | Latency P95 | < 3000ms | 28d | |
 | Error Rate | < 2% | 28d | |
 | Cost Budget | < $2.5/day | 1d | |
+| Quality Score Avg | >= 0.75 | 28d | |
 
 ### 3.3 Alerts & Runbook
 - [ALERT_RULES_SCREENSHOT]: [Path to image]
-- [SAMPLE_RUNBOOK_LINK]: [docs/alerts.md#L...]
+- [SAMPLE_RUNBOOK_LINK]: [docs/alerts.md#1-high-latency-p95]
 
 ---
 
-## 4. Incident Response (Group)
+## 4. Incident Response
 - [SCENARIO_NAME]: (e.g., rag_slow)
-- [SYMPTOMS_OBSERVED]: 
+- [SYMPTOMS_OBSERVED]:
 - [ROOT_CAUSE_PROVED_BY]: (List specific Trace ID or Log Line)
-- [FIX_ACTION]: 
-- [PREVENTIVE_MEASURE]: 
+- [FIX_ACTION]:
+- [PREVENTIVE_MEASURE]:
 
 ---
 
 ## 5. Individual Contributions & Evidence
-
-### [MEMBER_A_NAME]
-- [TASKS_COMPLETED]: 
-- [EVIDENCE_LINK]: (Link to specific commit or PR)
-
-### [MEMBER_B_NAME]
-- [TASKS_COMPLETED]: 
-- [EVIDENCE_LINK]: 
-
-### [MEMBER_C_NAME]
-- [TASKS_COMPLETED]: 
-- [EVIDENCE_LINK]: 
-
-### [MEMBER_D_NAME]
-- [TASKS_COMPLETED]: 
-- [EVIDENCE_LINK]: 
-
-### [MEMBER_E_NAME]
-- [TASKS_COMPLETED]: 
-- [EVIDENCE_LINK]: 
+- [TASKS_COMPLETED]:
+- [EVIDENCE_LINK]: https://github.com/damquan1001/TeamCorner-Lab13-Observability/tree/ledamquan
+- [TEST_COMMANDS_RUN]:
+- [VALIDATION_OUTPUT_SUMMARY]:
 
 ---
 

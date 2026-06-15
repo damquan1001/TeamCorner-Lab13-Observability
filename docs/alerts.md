@@ -18,7 +18,7 @@
 - Trigger: `error_rate_pct > 5 for 5m`
 - Impact: users receive failed responses
 - First checks:
-  1. Group logs by `error_type`
+  1. Aggregate logs by `error_type`
   2. Inspect failed traces
   3. Determine whether failures are LLM, tool, or schema related
 - Mitigation:

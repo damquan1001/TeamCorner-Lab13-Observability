@@ -1,4 +1,4 @@
-# Evidence Collection Sheet
+# Individual Evidence Collection Sheet
 
 ## Required screenshots
 - Langfuse trace list with >= 10 traces
